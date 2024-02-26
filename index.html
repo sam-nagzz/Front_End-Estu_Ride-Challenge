@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsiveStyle.css">
+    <title>Reservation System</title>
+    <link rel="icon" type="image/png" href="images/icon.png">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h7>Booking</h7>
+        <div class="user-info">
+            <button id="userButton">
+                <img src="images/user.png" alt="User">
+            </button>
+            <div class="user-dropdown">
+                <a href="#">Profile</a>
+                <a href="#">Configurations</a>
+                <a href="#">LogOut</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Weather -->
+        <div class="card-weather">
+            <div class="search">
+                <input type="text" placeholder="enter city name" spellcheck="false">
+                <button><img src="images/search.png"></button>
+            </div>
+            <div class="error">
+                <p>Invalid city name</p>
+            </div>
+            <div class="weather">
+                <img src="images/rain.png" class="weather-icon">
+                <h1 class="temp">22°C</h1>
+                <h2 class="city">New York</h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="images/humidity.png">
+                        <div>
+                            <p class="humidity">50%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="images/wind.png">
+                        <div>
+                            <p class="wind">15 km/h</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Reservation -->
+        <div class="reservations-container">
+            <section class="reservation-form">
+                <h2>Book a Single Room</h2>
+                <form id="reservation-form">
+                    <div class="booking-form">
+                        <div class="input-group">
+                            <label for="date" class="visually-hidden">Date:</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="guests" class="visually-hidden">Number of guests:</label>
+                            <select id="guests" name="guests">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="room-options">
+                        <div class="room-option">
+                            <input type="radio" id="singleRoom1" name="roomOption" value="DC Boutique Hotel" checked>
+                            <label for="singleRoom1" class="card">
+                                <div class="card">
+                                    <div class="carousel-images">
+                                        <img src="images/room1-1.png" alt="Single Room1" class="carousel-image visible">
+                                        <img src="images/room1-2.png" alt="Single Room1" class="carousel-image">
+                                        <img src="images/room1-3.png" alt="Single Room1" class="carousel-image">
+                                    </div>
+                                    <div class="carousel-controls">
+                                        <button class="prev">
+                                            <img src="images/prev-arrow.png" alt="Previous">
+                                        </button>
+                                        <button class="next">
+                                            <img src="images/next-arrow.png" alt="Next">
+                                        </button>
+                                    </div>
+                                    <div class="carousel-indicators">
+                                        <span class="dot active"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                    <div class="card-info">
+                                        <h3>DC Boutique Hotel<img src="images/3stars.png" alt="Location" class="stars-icon"></h3>
+                                        <p><img src="images/location.png" alt="Location" class="location-icon">Carretera costera S/N 71987</p>
+                                        <p>Puerto Escondido, Mexico</p>
+                                        <h4>$1,541 MXN night</h4>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="room-option">
+                            <input type="radio" id="singleRoom2" name="roomOption" value="Terrestre">
+                            <label for="singleRoom2" class="card">
+                                <div class="card">
+                                    <div class="carousel-images">
+                                        <img src="images/room2-1.png" alt="Single Room2" class="carousel-image visible">
+                                        <img src="images/room2-2.png" alt="Single Room2" class="carousel-image">
+                                        <img src="images/room2-3.png" alt="Single Room2" class="carousel-image">
+                                    </div>
+                                    <div class="carousel-controls">
+                                        <button class="prev">
+                                            <img src="images/prev-arrow.png" alt="Previous">
+                                        </button>
+                                        <button class="next">
+                                            <img src="images/next-arrow.png" alt="Next">
+                                        </button>
+                                    </div>
+                                    <div class="carousel-indicators">
+                                        <span class="dot active"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                    <div class="card-info">
+                                        <h3>Terrestre<img src="images/4stars.png" alt="Location" class="stars-icon"></h3>
+                                        <p><img src="images/location.png" alt="Location" class="location-icon">Unnamed road 71847</p>
+                                        <p>Puerto Escondido, Mexico</p>
+                                        <h4>$7,713 MXN night</h4>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="room-option">
+                            <input type="radio" id="singleRoom3" name="roomOption" value="Casa Joseph Zicatela">
+                            <label for="singleRoom3" class="card">
+                                <div class="card">
+                                    <div class="carousel-images">
+                                        <img src="images/room3-1.png" alt="Single Room3" class="carousel-image visible">
+                                        <img src="images/room3-2.png" alt="Single Room3" class="carousel-image">
+                                        <img src="images/room3-3.png" alt="Single Room3" class="carousel-image">
+                                    </div>
+                                    <div class="carousel-controls">
+                                        <button class="prev">
+                                            <img src="images/prev-arrow.png" alt="Previous">
+                                        </button>
+                                        <button class="next">
+                                            <img src="images/next-arrow.png" alt="Next">
+                                        </button>
+                                    </div>
+                                    <div class="carousel-indicators">
+                                        <span class="dot active"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                    <div class="card-info">
+                                        <h3>Casa Joseph Zicatela<img src="images/5stars.png" alt="Location" class="stars-icon"></h3>
+                                        <p><img src="images/location.png" alt="Location" class="location-icon">Avenida del Moro 70934</p>
+                                        <p>Puerto Escondido, Mexico</p>
+                                        <h4>$9,294 MXN night</h4>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit">Book</button>
+                </form>
+            </section>
+            <!-- Current Reservations-->
+            <section class="current-reservations">
+                <h2>Current Reservations</h2>
+                <ul id="reservations">
+                </ul>
+            </section>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2024 Booking. All rights reserved.
+    </div>
+    <script src="JS/Carousel.js"></script>
+    <script src="JS/Weather.js"></script>
+    <script src="JS/Reservations.js"></script>
+</body>
+</html>
