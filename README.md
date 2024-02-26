@@ -39,31 +39,32 @@ This project is a basic web application that simulates an Airbnb-style reservati
 
 ---
 
-## Steps to Fork and Share the Repository
-1. Fork the Repository:
+# Steps to Book
 
-    - Go to the GitHub repository page.
-    - Click the 'Fork' button on the top right corner of the page. This creates a copy of the repository in your GitHub account.
+## Check Weather
+Refer to the current weather displayed on the homepage to help plan your stay. Review the current reservations list to check the availability of rooms for your prefered dates.
 
-2. Clone the Forked Repository:
+## Select Your Stay Details
+Use the date picker to select your desired check-in date. The system will prevent you from selecting dates that have already passed. Choose the number of guests from the dropdown menu (options range from 1 to 4 guests).
 
-    - On your forked repository page, click the 'Code' button and copy the URL.  
-    - Open your terminal or command prompt.  
-    - Run git clone [URL] to clone the repository to your local machine.
+## Explore Rooms
+Browse through the available rooms displayed on the platform. View al least three photos of each room by clicking on the photo carousel to cycle through them. Read the brief description provided for each room to get an idea of the amenities and features.
 
-3. Implement the Challenge:
+## Select Your Room
+Choose your desired room based on the photos and information provided. Click on the room to hightlight your chosen room.
 
-    - Make the necessary changes and improvements to the codebase as per the challenge requirements.  
-    - Include the steps for the reviewer to run your application, you can delete or modify the content of this README file to include instructions.
+## Submit Your Reservation Request
+After filling out the form with the date, number of guests, and selected room, click the 'Book' button to submit your reservation request.
+- If your selected date is already reserved for the chosen room, an error message will display, prompting you to choose another one.
+- If the date is available, your reservation will be confirmed, and a confirmation message will be display.
 
-4. Push Changes:
+## Review Your Reservation
+Your booking details will now be visible in the current reservations area. Confirm that all details are correct.
 
-    - After making your changes, commit them and push them back to your forked repository.
-    - Use git add ., git commit -m "Your commit message", and git push origin main.
+With your booking confirmed, you can now prepare for your stay.
 
-5. Share Your Work:
-
-    - Once you've pushed your changes, share the link to your forked repository as your submission for the challenge.
+### Note
+Please note that this system is a simulation and no actual room booking will be processed.
 
 ---
 
